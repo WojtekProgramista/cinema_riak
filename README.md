@@ -4,7 +4,7 @@ Python console aplication using Riak distributed database system.
 ## Prerequisites
 
 * [Docker](https://www.docker.com/)
-* [Virtualenv](https://virtualenv.pypa.io/en/latest/)
+* [Python 2.7](https://www.python.org/download/releases/2.7/)
 
 Application was created and tested on Linux (Ubuntu 20.04), commands below are meant to be run in Linux terminal.
 
@@ -27,13 +27,10 @@ docker-compose up -d coordinator
 docker-compose scale member=4
 ```
 
-To run Python script, we need to activate this application's Python virtual environment.
+To run Python script, we need to get required Python libraries.
 
 ```
-virtualenv venv --distribute
-```
-```
-source venv/bin/activate
+pip install -r requirements.txt
 ```
 
 Finally, to run basic version of the application, use command below.
