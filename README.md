@@ -19,6 +19,7 @@ cd cinema_riak
 ```
 
 Next run cluster of Riak nodes using blueprint in ```docker-compose.yaml``` file.
+(might require sudo privileges)
 
 ```
 docker-compose up -d coordinator
@@ -35,7 +36,7 @@ python -m pip install virtualenv
 virtualenv --python=python2.7 venv
 ```
 ```
-source something/bin/activate
+source venv/bin/activate
 ```
 ```
 pip install -r requirements.txt
