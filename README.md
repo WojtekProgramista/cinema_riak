@@ -8,7 +8,7 @@ Python console aplication using Riak distributed database system.
 
 Application was created and tested on Linux (Ubuntu 20.04), commands below are meant to be run in Linux terminal.
 
-# Set up
+## Set up
 Start by cloning and entering this repository.
 
 ```
@@ -45,4 +45,10 @@ pip install -r requirements.txt
 Finally, to run basic version of the application, use command below.
 ```
 python main.py
+```
+
+## Multiple instances
+By default, starting the app builds the database from scrach. To avoid bugs and retain state of database in more than one app instance - every parrarel run should be followed by ```--no-clean``` flag.
+```
+python main.py --no-clean
 ```
