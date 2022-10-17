@@ -19,6 +19,8 @@ if __name__ == '__main__':
         print ("STRESS TEST 3 IS RUNNING...")
         test_3(System(db_client, screenings_number=32))
         sys.exit("STRESS TEST 3 ENDED")
+    elif "--no-clean" in sys.argv:
+        system = System(db_client, clean=False)
     else:
         system = System(db_client)
 
